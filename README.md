@@ -1,12 +1,58 @@
-# React + Vite
+# 🧩 Exercícios React – Aula 3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém a solução dos dois exercícios propostos na terceira aula da disciplina de FrontEnd Avançado, utilizando conceitos fundamentais do React como componentização, props, destructuring, arrays com .map() e Fragments.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✅ Descrição da Atividade
 
-## Expanding the ESLint configuration
+Foi desenvolvido um componente chamado `Aluno`, responsável por renderizar as informações de um aluno, incluindo:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `nome`
+- `email`
+- `curso`
+- `media`
+- `status` (calculado com base na média)
+
+Os dados são extraídos utilizando **destructuring** para tornar o código mais organizado e legível.
+
+---
+
+## 🧩 Parte A
+
+Na primeira etapa da atividade, o foco foi na criação de um componente `Aluno` que exibia as propriedades `nome`, `email` e `curso`. Os dados foram armazenados em um array de objetos no `App.jsx`, e renderizados dinamicamente utilizando o método `.map()`.
+
+---
+
+## 🧩 Parte B
+
+Na segunda parte, o componente `Aluno` foi aprimorado com os seguintes ajustes:
+
+- Uso de **React Fragments (`<> </>`)** no lugar da `<div>` externa, para evitar elementos desnecessários no DOM.
+- Inclusão da **propriedade `media`** e cálculo do **`status`** do aluno com base nela:
+  - Se `media >= 7.00`, exibe `APROVADO(A)`
+  - Caso contrário, exibe `REPROVADO(A)`
+
+🛠️ Código do Componente
+
+![image](https://github.com/user-attachments/assets/991be69d-e59c-4572-8ce6-259dcbfca28a)
+
+💻 Resultado no navegador:
+
+![image](https://github.com/user-attachments/assets/f7fa9d9d-60bd-4274-b7a7-8e8dbebac418)
+
+
+## ⚙️ Tecnologias e Conceitos Utilizados
+
+- ReactJS
+- Componentes Funcionais
+- Props e Destructuring
+- Array `.map()`
+- JSX
+- React Fragments
+- Lógica condicional (operador ternário)
+
+
+
+
+
